@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Karla:wght@300;400;600&display=swap" rel="stylesheet">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Galindo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+       </style>
+    </head>
+    <body>
+        <div id="welcome-page">
+            <div class="about-page fade-in">
+
+                <header>
+                    <h1 class="intro">Welcome to Quizirks!</h1>
+                </header>
+                <section id="about-me">
+                    <h2>About Me</h2>
+                     <article>
+                        Hi, I’m Aaditya, a Computer Science student from Rajalakshmi Engineering College, Chennai. 
+                        I'm interested in learning Web Development and an aspiring full-stack developer.
+                     </article>
+                </section>
+
+                <section id="about-quiz-app">
+                    <h2>About Quizirks</h2>
+                     <article>
+                        Quizirks is a quiz app that was created as part of my journey into web development, focusing on building interactive and responsive user experiences using core HTML, CSS, and JavaScript.  
+                        It’s designed not just for fun but also as a learning tool.  
+                        <br><br>
+                        As a web development learner, I wanted to create something interactive and visually engaging while reinforcing my understanding of core frontend technologies. 
+                        This helped me practice DOM manipulation, event handling, and time-based functions in JavaScript and sets the stage for future upgrades using frameworks like React.
+                     </article>
+                </section>
+                
+                <aside>
+                    <h3>Version Info</h3>
+                    <p>Quizirks v1.0 - Built with HTML, CSS, and JavaScript.</p>
+                </aside>
+                <footer>
+                    <p>Please click below to attempt the quiz.</p>
+                </footer>
+            </div>
+        </div>
+        <span class="spinner"></span>
+        
+
+        <div id="upper-wrapper">
+            <div class="logo-font">Quizirks</div>
+            <div id="timer" aria-live="polite">Time Left:</div>
+
+        </div>        
+        <div id="main-wrapper">
+            
+            
+            <div id="inbox">
+                <div id="active"></div>
+                <div id="question-box"></div>
+            </div>
+    
+            <div id="quiz-box">
+
+                <div id="que-num"></div>
+                <div id="question"></div>
+                <div id="options"></div>
+                <div class="all-buttons">
+                    <div class="clear-container"></div>
+                    <div class="nav-buttons"></div>
+                </div>
+                
+            </div>
+        
+        </div>
+        <div class="time-up"></div>
+        <div class="are-u-sure"></div>
+        <div id="completed-box"></div>
+        <div id="result"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
