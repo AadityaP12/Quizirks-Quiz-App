@@ -11,7 +11,7 @@ const quizState={
   userAnswers:[],
 };
 
-let timeLeft=3600; //question not loading bug here when changing time
+let timeLeft=3600; 
 let timer;
 let quizData=[];
 
@@ -139,7 +139,7 @@ function loadErrorMessage(){
   retryBtn.innerText="Retry";
   retryBtn.addEventListener("click",async ()=>{
 
-    document.querySelector(".spinner").style.display="flex";    /// loading indicator not showing
+    document.querySelector(".spinner").style.display="flex";    
 
     try {
 
@@ -232,7 +232,7 @@ function trackQuestion(){
  function startTimer(){
 
 
-    document.querySelector(".spinner").style.display="none";  // why transferring this here makes the loader disappear?
+    document.querySelector(".spinner").style.display="none";  
 
   
     clearInterval(timer);
