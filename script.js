@@ -73,19 +73,6 @@ try {
 
   const res= await fetch("https://opentdb.com/api.php?amount=50&category=18");
 
-  /*let loadingTime=0;
-
-  setInterval(()=>{
-
-    loadingTime++;
-
-    if(loadingTime>10){
-
-      throw new Error(loadErrorMessage())
-    }
-
-  },1000);*/
-
   const data= await res.json();
 
   quizData=data.results.map(item => {
@@ -554,8 +541,6 @@ async function confirmFinish(){
   console.log("inside confirmFinish function");
 
   clearElementById("confirm-finish");
-
-  //document.getElementById("main-wrapper").classList.add("blur-background");
 
   const confirmed=document.createElement("div");
   confirmed.id="confirm-finish";
