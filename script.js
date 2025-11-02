@@ -684,12 +684,3 @@ function displayScore(){
   storeState();
 }
 
-function storeState(){
-
-  localStorage.setItem("quizState",JSON.stringify(quizState));
-}
-
-function getState(){
-
-  return JSON.parse(localStorage.getItem("quizState"));
-}
